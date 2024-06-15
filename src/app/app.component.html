@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-2 col-12">
+      <app-sidebar [isSidebarVisible]="isSidebarVisible"></app-sidebar>
+      <button
+        class="btn btn-primary d-md-none toggle-btn"
+        (click)="toggleSidebar()"
+      >
+        ☰
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="col-md-10 col-12 p-5 mt-5 mt-md-2 ">
+      <div class="text-start w-100">
+        <!-- Your content here -->
+
+        <div class="d-flex flex-wrap justify-content-center align-items-start">
+          <div class="col-md-6">
+            <app-leave-report></app-leave-report>
+          </div>
+          <div class="col-md-6 ">
+            <app-request-for-leave></app-request-for-leave>
+          </div>
+          <div class="col-md-6">
+            <app-off-today></app-off-today>
+          </div>
+          <div class="col-md-6 ">
+            <app-report></app-report>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
